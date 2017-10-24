@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "543446829716",
+    "firebase_url": "https://smallfortune-75c13.firebaseio.com",
+    "project_id": "smallfortune-75c13",
+    "storage_bucket": "smallfortune-75c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543446829716:android:874198cb28e9cd1f",
+        "android_client_info": {
+          "package_name": "smallfortune.example.com.smallfortune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543446829716-1pkh8gadvkhkt7i6chio4ujcarc6utvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv3Zj9K3FJGD4HmNwtO7TDDlh4u4vRvC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

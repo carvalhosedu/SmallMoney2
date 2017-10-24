@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#3fb399"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="69dp"
+            android:layout_height="38dp"
+            android:background="?android:attr/actionModeCloseDrawable"
+            android:onClick="backToHome" />
+
+        <Button
+            android:id="@+id/btn_tesseract"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="255dp"
+            android:background="@android:drawable/ic_menu_camera"
+            android:backgroundTint="@color/colorMyCustomColor"
+            android:onClick="start_cam" />
+
+        <EditText
+            android:id="@+id/writedesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:hint="Informe uma Descrição" />
+
+        <EditText
+            android:id="@+id/writevalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="Informe o valor"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/writedate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:hint="Informe o Vencimento"
+            android:focusable="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Adicionar"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="2"
+                android:id="@+id/search"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pesquisar"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:id="@+id/readlist">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
